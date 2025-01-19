@@ -10,6 +10,6 @@ export default registerAs(
     },
     projectName: process.env.PROJECT_NAME || 'dna-logs',
     apiPrefix: process.env.API_PREFIX || '/api/v1',
-    corsEnabled: process.env.CORS_ENABLED || false,
+    corsEnabled: Boolean(process.env.CORS_ENABLED) || false,
   }),
 );

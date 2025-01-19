@@ -48,7 +48,7 @@ export class LogCountService {
             console.log(`Log is within the last hour: ${line}`);
     
             // Cek apakah endpoint mengandung '/log-count'
-            if (endpoint.split('/').includes('log-count') || endpoint === '/api/v1') {
+            if (endpoint.split('/').includes('log_counts') || endpoint === '/api/v1') {
                 console.log('Skipping endpoint:', endpoint);
                 continue; // Lewati endpoint ini
             }
